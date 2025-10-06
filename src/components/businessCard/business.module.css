@@ -1,0 +1,10 @@
+.card:hover {
+  background-color: #2f9393;
+
+  transition: 0.4s ease;
+  .icon,
+  .heading,
+  .para {
+    color: white;
+  }
+}

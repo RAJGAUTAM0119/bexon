@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 27rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 90rem;
+}
+
+:root {
+  --background: #ecf0f0;
+  --foreground: #171717;
+}
+
+@font-face {
+  font-family: primaryFont;
+  src: url(../../public/fonts/primaryFont.woff2) format(woff2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ecf0f0;
+    --foreground: #000000;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: 0.8s ease-in-out;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: primaryFont;
+}

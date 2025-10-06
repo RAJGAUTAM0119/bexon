@@ -1,0 +1,8 @@
+.hamSideBar {
+  position: absolute;
+  left: 0;
+  .sideBar {
+    position: relative;
+    left: 100%;
+  }
+}
